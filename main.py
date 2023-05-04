@@ -64,7 +64,7 @@ def register_user(email, password):
         # Send a verification email to the user
         link = auth.generate_email_verification_link(email, action_code_settings=None)
         message = Mail(
-            from_email='chengda.zheng@mail.utoronto.ca',
+            from_email='zhengc@utoronto.ca',
             to_emails=email,
             subject='GCVerify',
             html_content=link)
